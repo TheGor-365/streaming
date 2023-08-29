@@ -3,6 +3,9 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
+    @title = 'Books'
+
+    render stream: true
   end
 
   def show
@@ -46,7 +49,7 @@ class BooksController < ApplicationController
   end
 
   private
-  
+
   def set_book
     @book = Book.find(params[:id])
   end
