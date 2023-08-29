@@ -1,0 +1,12 @@
+<h1 class="text-center text-muted">
+  Editing store
+</h1>
+
+<%= render "form", store: @store %>
+
+<br>
+
+<div class="btn-group">
+  <%= link_to "Show this store", @store, class: 'btn btn-sm btn-outline-primary' %>
+  <%= link_to "Back to stores", stores_path, class: 'btn btn-sm btn-outline-secondary' %>
+</div>
