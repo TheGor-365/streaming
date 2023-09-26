@@ -3,8 +3,8 @@
 </p>
 
 <div class="card shadow my-5 p-5">
-  <%= form_tag messaging_path, method: :get do %>
-    <%= text_field :message, params[:message], placeholder: 'message', class: 'form-control' %>
+  <%= form_tag messaging_path do %>
+    <%= text_field :message, @message, placeholder: 'message', class: 'form-control' %>
 
     <%= submit_tag 'Post Message', class: 'btn btn-sm btn-outline-success mt-3' %>
   <% end %>
